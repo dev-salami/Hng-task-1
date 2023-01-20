@@ -23,7 +23,7 @@ function Test() {
           "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
         "Access-Control-Allow-Methods": "OPTIONS,POST",
         "Access-Control-Allow-Credentials": true,
-        "Access-Control-Allow-Origin": "http://localhost:5000",
+        "Access-Control-Allow-Origin": "http://localhost:3000",
         "X-Requested-With": "*",
         // "Access-Control-Allow-Origin": "*",
       },
