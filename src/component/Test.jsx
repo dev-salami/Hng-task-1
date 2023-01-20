@@ -19,6 +19,12 @@ function Test() {
       // withCredentials: true,
       headers: {
         "Content-type": "application/json",
+        "Access-Control-Allow-Headers":
+          "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "Access-Control-Allow-Methods": "OPTIONS,POST",
+        "Access-Control-Allow-Credentials": true,
+        "Access-Control-Allow-Origin": "*",
+        "X-Requested-With": "*",
         // "Access-Control-Allow-Origin": "*",
       },
       data: JSON.stringify(user),
