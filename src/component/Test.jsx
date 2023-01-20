@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-const rootUrl = "http://localhost:5000";
+// const rootUrl = "http://localhost:5000";
+const rootUrl = "https://mern-app-8kmf.onrender.com";
 
 function Test() {
   const [email, setEmail] = useState("");
@@ -19,12 +20,7 @@ function Test() {
       // withCredentials: true,
       headers: {
         "Content-type": "application/json",
-        "Access-Control-Allow-Headers":
-          "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
-        "Access-Control-Allow-Methods": "OPTIONS,POST",
-        "Access-Control-Allow-Credentials": true,
-        "Access-Control-Allow-Origin": "http://localhost:3000",
-        "X-Requested-With": "*",
+
         // "Access-Control-Allow-Origin": "*",
       },
       data: JSON.stringify(user),
